@@ -6,12 +6,17 @@
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import HelloWorld from './components/HelloWorld.vue';
+import AppHeader from './components/common/AppHeader.vue';
+var a = 1;
 export default {
-  name: "App",
+  name: 'App',
   components: {
     HelloWorld,
+    AppHeader,
+  },
+  created() {
+    console.log('hi');
   },
 };
 </script>
